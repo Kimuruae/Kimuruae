@@ -1,56 +1,140 @@
-/* style.css */
-body {
-    padding-top: 56px;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
     background-color: #f4f4f4;
-}
-
-.container {
-    padding-top: 20px;
-}
-
-.navbar-nav .nav-link {
-    font-size: 18px;
-    margin-right: 15px;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-/*Table styling*/
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ddd;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-/*Forms styling*/
-form {
-    background-color: #fff;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
     padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hero {
+    padding: 50px 20px;
+  }
+  
+  .hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-control {
+    display: inline-block;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 50px 20px;
+  }
+  
+  #about, #portfolio, #blog, #contact {
+    text-align: center;
+  }
+  
+  .skills .skill {
+    margin: 10px 0;
+  }
+  
+  .progress {
+    background-color: #ddd;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress div {
+    height: 100%;
+    background-color: #007bff;
+  }
+  
+  .project-grid, .blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .project-card, .blog-post {
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  
+  .project-card h3, .blog-post h3 {
+    margin-bottom: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  input, textarea, button {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-.btn {
-    padding: 10px 20px;
-    border-radius: 5px;
-}
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .social-links a {
+    color: #007bff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
