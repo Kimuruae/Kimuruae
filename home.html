@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kimuruae - Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      padding: 100px 0;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    .hero h3 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+
+    .btn-primary {
+      background-color: #2575fc;
+      border: none;
+      padding: 10px 25px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #6a11cb;
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 10px 25px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+      background-color: #fff;
+      color: #2575fc;
+    }
+
+    .about-me {
+      background: #f8f9fa;
+      padding: 80px 0;
+    }
+
+    .about-me h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .about-me p {
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    .featured-articles {
+      padding: 80px 0;
+    }
+
+    .featured-articles h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .why-follow {
+      background: #f8f9fa;
+      padding: 80px 0;
+    }
+
+    .why-follow h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    .why-follow h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .why-follow p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .newsletter {
+      background: #2575fc;
+      color: #fff;
+      padding: 80px 0;
+    }
+
+    .newsletter h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .newsletter p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .newsletter .form-control {
+      border: none;
+      padding: 15px;
+      font-size: 1rem;
+    }
+
+    .newsletter .btn-dark {
+      background-color: #333;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .newsletter .btn-dark:hover {
+      background-color: #6a11cb;
+    }
+
+    .testimonials {
+      padding: 80px 0;
+    }
+
+    .testimonials h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    .blockquote {
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    .footer {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer a:hover {
+      color: #2575fc;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Navigation Bar -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">Kimuruae</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero text-center">
+    <div class="container">
+      <h2>Welcome to My Portfolio</h2>
+      <h3>I'm Kimuruae, a Software Engineer, Realtor, and Business Consultant</h3>
+      <button class="btn btn-primary" type="button">Read Latest Updates</button>
+      <button class="btn btn-secondary" type="button">Subscribe to Updates</button>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="about-me text-center">
+    <div class="container">
+      <h2>Welcome to Kimuruae</h2>
+      <p>Passionate about tech, business, and innovation. Founder of AfriTech & Kimuruae Properties.</p>
+    </div>
+  </section>
+
+  <!-- Featured Articles -->
+  <section class="featured-articles">
+    <div class="container">
+      <h2 class="text-center">Trending Topics</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/ai.jpg" class="card-img-top" alt="AI in Business">
+            <div class="card-body">
+              <h5 class="card-title">The Future of AI in Business</h5>
+              <p class="card-text">Discover how AI is transforming businesses and creating new opportunities for growth.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/iot.jpg" class="card-img-top" alt="Internet of Things">
+            <div class="card-body">
+              <h5 class="card-title">Internet of Things Explained</h5>
+              <p class="card-text">Learn how IoT is revolutionizing industries and changing the way we live and work.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/blockchain.jpg" class="card-img-top" alt="Blockchain Technology">
+            <div class="card-body">
+              <h5 class="card-title">Blockchain and the Future of Finance</h5>
+              <p class="card-text">Explore the potential of blockchain technology in reshaping the financial industry.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Follow Kimuruae -->
+  <section class="why-follow text-center">
+    <div class="container">
+      <h2>Why Kimuruae?</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h3>Insights</h3>
+          <p>Get the latest insights into AI, emerging technologies, and business innovations.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h3>Resources</h3>
+          <p>Access a wealth of resources, including articles, guides, and tutorials.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h3>Community</h3>
+          <p>Join a community of like-minded individuals passionate about technology and innovation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter text-center">
+    <div class="container">
+      <h2>Subscribe to My Newsletter</h2>
+      <p>Stay updated with the latest trends and insights in AI, emerging technologies, and business innovation.</p>
+      <form>
+        <div class="form-row justify-content-center">
+          <div class="col-md-4 mb-2">
+            <input type="email" class="form-control" placeholder="Enter your email">
+          </div>
+          <div class="col-md-2">
+            <button type="submit" class="btn btn-dark btn-block">Subscribe</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="text-center">What Readers Are Saying</h2>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0">"Kim is a great writer and a thought leader in the field of AI and emerging technologies. His insights are always spot-on, and his articles are a must-read for anyone interested in the future of business."</p>
+            <footer class="blockquote-footer">John Doe</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="about.html">About</a></li>
+        <li class="list-inline-item"><a href="blog.html">Blog</a></li>
+        <li class="list-inline-item"><a href="contact.html">Contact Us</a></li>
+        <li class="list-inline-item"><a href="faqs.html">FAQs</a></li>
+      </ul>
+      <p>&copy; <span id="year"></span> Kimuruae. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap, Popper.js, and jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Dynamic Year Script -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
